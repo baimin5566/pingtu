@@ -1,0 +1,9 @@
+<!--help.wxml-->
+<view class="help">
+  <view class="item">
+    <p class="{{show?'active':''}}">这里是问题<image wx:if="{{show}}" bindtap="more" class="more" src="/images/icons/icon-question-active.png"></image><image wx:else bindtap="more" class="more" src="/images/icons/icon-question.png"></image></p>
+    <p class="detail" wx:if="{{show}}">这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开这里是展开</p>
+  </view>
+  <button>联系在线客服</button>
+  <p class="bot">v1.0<i></i><a>投诉</a></p>
+</view>

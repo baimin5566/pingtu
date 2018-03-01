@@ -1,0 +1,365 @@
+.pintu {
+	min-height: 100vh;
+	height: 100%;
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+}
+.main {
+	background-color: #DD5051;
+	padding-bottom: 24rpx;
+}
+.userinfo {
+	text-align: center;
+	padding: 36rpx 28px 0;
+}
+
+.userinfo-avatar {
+	display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto 16rpx;
+  border-radius: 100%;
+}
+
+.userinfo .tips {
+	display: block;
+  font-size: 16px;
+	color: #FEE2B2;
+	letter-spacing: 0;
+	margin-bottom: 10rpx;
+}
+
+.pintu-box {
+	margin: 24rpx auto 16rpx;
+	width: 300rpx;
+	height: 300rpx;
+	border: 2px solid #FEE2B2;
+	border-radius: 2px;
+	position: relative;
+}
+
+.pintu-box image {
+	width: 300rpx;
+	height: 300rpx;
+}
+.pintu-box .shade {
+	position: absolute;
+	width: 300rpx;
+	height: 300rpx;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background: rgba(0,0,0,0.50);
+}
+.pintu-box .shade .eye {
+	width: 40rpx;
+	height: 32rpx;
+	position: absolute;
+	bottom: 32rpx;
+	margin-left: -20rpx;
+}
+.pintu-box .start {
+	position: absolute;
+	width: 200rpx;
+	height: 100rpx;
+	background: rgba(0,0,0,0.40);
+	border: 2px solid #FFBE00;
+	border-radius: 4px;
+	z-index: 2;
+	font-size: 36rpx;
+	color: #FFBE00;
+	letter-spacing: 0;
+	left: 50rpx;
+	top: 90rpx;
+	padding: 0 14rpx;
+	box-sizing: border-box;
+	line-height: 45rpx;
+}
+
+.money {
+	margin-top: 94rpx;
+	display: block;
+	font-size: 32rpx;
+	color: #FFBE00;
+	letter-spacing: 0;
+	line-height: 112rpx;
+}
+
+.money span {
+	font-size: 80rpx;
+	color: #FFBE00;
+	font-family: PingFangSC-Semibold;
+	letter-spacing: 0;
+	margin-right: 10rpx;
+	position: relative;
+	top: 10rpx;
+}
+
+.time {
+	display: block;
+	font-size: 28rpx;
+	color: #F8C487;
+	letter-spacing: 0;
+}
+
+.time image {
+	width: 32rpx;
+	height: 32rpx;
+	margin-right: 10rpx;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.opt {
+	display: flex;
+	font-size: 32rpx;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	justify-content: space-around;
+	margin-top: 32rpx;
+}
+
+.opt p image {
+	width: 36rpx;
+	height: 36rpx;
+	margin-right: 10rpx;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.opt p:last-child image {
+	width: 32rpx;
+	height: 28rpx;
+}
+
+.records p {
+	display: block;
+}
+
+.status {
+	font-size: 28rpx;
+	color: #999999;
+	letter-spacing: 0;
+	text-align: left;
+	border-bottom: 1px solid #EBEBEB;
+	padding: 24rpx 32rpx;
+}
+
+.status a {
+	float: right;
+	font-size: 28rpx;
+	color: #586C94;
+}
+
+.records .btn {
+	font-size: 32rpx;
+	color: #586C94;
+	letter-spacing: 0;
+	margin-top: 48rpx;
+}
+
+.records .tips {
+	font-size: 28rpx;
+	color: #999999;
+	letter-spacing: 0;
+	margin-top: 32rpx;
+}
+
+.user-item {
+	border-bottom: 1px solid #EBEBEB;
+	padding: 30rpx 32rpx;
+	text-align: left;
+	display: flex;
+	align-items: center;
+}
+
+.user-item view {
+	flex: 1;
+}
+
+.user-item image {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 4px;
+	margin-right: 16rpx;
+}
+
+.user-item .name {
+	font-size: 32rpx;
+	color: #333333;
+	letter-spacing: 0;
+}
+
+.user-item .desc {
+	font-size: 28rpx;
+	color: #999999;
+	letter-spacing: 0;
+	margin-top: 8rpx;
+}
+
+.user-item span {
+	float: right;
+}
+
+.dz {
+	width: 304rpx;
+	height: 34rpx;
+	position: absolute;
+	bottom: 24rpx;
+	margin-left: -152rpx;
+}
+
+.pintu .shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	background: rgba(0,0,0,0.70);
+}
+
+canvas {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -99;
+}
+
+.shadow .time {
+	width: 416rpx;
+	height: 64rpx;
+	line-height: 64rpx;
+	border: 1px solid #fff;
+	border-radius: 100px;
+	font-size: 16px;
+	color: #fff;
+	letter-spacing: 0;
+	position: absolute;
+	top: 114rpx;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.shadow .time image {
+	position: relative;
+	top: -4rpx;
+}
+
+.shadow .game {
+	width: 600rpx;
+	height: 600rpx;
+	font-size: 0;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.shadow .game > view {
+	display: inline-block;
+	width: 200rpx;
+	height: 200rpx;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.shadow .game > view > image {
+	width: 200rpx;
+	height: 200rpx;
+}
+
+.shadow .game > view i {
+	display: inline-block;
+	width: 200rpx;
+	height: 200rpx;
+	background: rgba(0,0,0,0.40);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.shadow .game .tips {
+	display: block;
+	font-size: 28rpx;
+	color: #C9C9C9;
+	letter-spacing: 0;
+	margin-top: 48rpx;
+}
+
+.shadow button {
+	position: absolute;
+	bottom: 48rpx;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #fff;
+	font-size: 32rpx;
+	border-radius: 100px;
+	width: 240rpx;
+	background: rgba(0,0,0,0.1);
+}
+
+.success {
+	width: 510rpx;
+	height: 660rpx;
+	background: #D14C4D;
+	border-radius: 16px;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.success .close {
+	width: 44rpx;
+	height: 76rpx;
+	position: absolute;
+	top: -76rpx;
+	right: 20rpx;
+}
+
+.success .bg {
+	width: 510rpx;
+	height: 660rpx;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index:-1;
+}
+
+.success .open {
+	width: 200rpx;
+	height: 200rpx;
+}
+
+.success .user {
+  margin-bottom: 32rpx;
+  padding-top: 48rpx;
+}
+
+.success .userinfo-avatar {
+	display: block;
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto 16rpx;
+  border-radius: 100%;
+  border: 1px solid #FEE2B2;
+}
+
+.success .userinfo-nickname {
+	display: block;
+	font-size: 32rpx;
+	color: #fff;
+	letter-spacing: 0;
+}
+
+.success .info {
+	font-size: 28rpx;
+	color: #FEE2B2;
+	letter-spacing: 0;
+}

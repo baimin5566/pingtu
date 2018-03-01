@@ -1,0 +1,15 @@
+<!--withdraw.wxml-->
+<view class="withdraw">
+	<view class="box">
+		<view class="yue"><span class="title">账户余额</span><span class="money">50.5</span>元</view>
+		<p class="error" wx:if="{{error}}"><image src="/images/icons/icon-time-white.png"></image>提现金额超过账户余额</p>
+		<view class="withdraw-input" style="margin-top: {{error?'':'80'}}rpx">
+			<p class="title">提现金额</p>
+			<p><span>¥</span><input type="number" value="30" /></p>
+		</view>
+		<p class="tips" wx:if="{{false}}">提现到微信钱包，<a>全部提现</a></p>
+		<p class="tips">额外扣除¥12.00手续费（费率3%）</p>
+		<button>提现</button>
+		<p class="tips" style="text-align:center">1-5个工作日到账</p>
+	</view>
+</view>

@@ -1,0 +1,19 @@
+<!--complaint.wxml-->
+<view class="complaint">
+	<p class="title">请选择投诉原因</p>
+	<view class="check">
+		<checkbox-group bindchange="checkboxChange">
+		  <label class="checkbox" wx:for="{{items}}" wx:key="*this">
+		    <checkbox value="{{item.name}}" checked="{{item.checked}}" hidden="true"/>{{item.value}}
+		    <image wx:if="{{item.checked}}" src="/images/icons/icon-checkbox-checked.png"></image>
+        <image wx:else src="/images/icons/icon-checkbox.png"></image>
+		  </label>
+		</checkbox-group>
+	</view>
+	<p class="title">请填写您的手机号，方便我们联系您</p>
+	<view class="input-view">
+		<span>手机号</span>
+    <input type="number" placeholder="选填" value="{{phone}}"/>
+  </view>
+  <p class="btns"><button>提交</button></p>
+</view>

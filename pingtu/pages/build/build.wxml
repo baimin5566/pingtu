@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="build">
+  <image src="/images/pintu/home-share-bg.png" class="bg"></image>
+  <view class="main">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </block>
+      <p class="tips">发了一个拼图PK红包</p>
+    </view>
+    <view class="title">
+      <image src="/images/icons/icon-coma-left.png"></image>
+      <p>比一比谁的手速最快</p>
+      <image src="/images/icons/icon-coma-right.png"></image>
+    </view>
+    <view class="imgs">
+      <image src="/images/pintu/home-circle.png"></image>
+      <image src="/images/pintu/home-kai.png"></image>
+    </view>
+    <view class="btns">
+      <button open-type="share">转发到好友或群聊</button>
+      <button bindtap="getImage">生成朋友圈分享图</button>
+      <a bindtap="cancel">返回 > </a>
+    </view>
+  </view>
+  <canvas canvas-id="myCanvas"></canvas>
+</view>

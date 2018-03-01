@@ -1,0 +1,69 @@
+/**dingzhi.wxss**/
+.dingzhi {
+	background-color: #f1f1f1;
+	padding: 32rpx;
+	font-size: 32rpx;
+	color: #333333;
+	letter-spacing: 0;
+	min-height: 100vh;
+}
+
+input {
+	padding: 22rpx 32rpx;
+	background-color: #fff;
+	border-radius: 2px;
+}
+
+textarea {
+	width: auto;
+	line-height: 44rpx;
+	min-height: 220rpx;
+	padding: 22rpx 32rpx;
+	background-color: #fff;
+	border-radius: 2px;
+	margin-top: 32rpx;
+}
+
+button {
+	line-height: 88rpx;
+	background: #1AAD19;
+	border: 1px solid rgba(5,5,5,0.08);
+	border-radius: 4px;
+	color: #fff;
+	margin-top: 48rpx;
+}
+
+.success {
+	background: #FFFFFF;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.08);
+	border-radius: 4px;
+	height: 502rpx;
+	text-align: center;
+	padding: 32rpx;
+	box-sizing: border-box;
+}
+
+.icon-success {
+	width: 160rpx;
+	height: 160rpx;
+	display: block;
+	margin: 16rpx auto 32rpx;
+}
+
+.title {
+	display: block;
+	font-size: 48rpx;
+	color: #252525;
+	letter-spacing: 0;
+}
+
+.tips {
+	display: block;
+	font-size: 28rpx;
+	color: #999999;
+	letter-spacing: 0;
+	margin-top: 48rpx;
+	border-top: 2rpx solid #E7E7E7;
+	padding-top: 32rpx;
+	line-height: 40rpx;
+}

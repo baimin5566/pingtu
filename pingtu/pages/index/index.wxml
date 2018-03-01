@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <p class="userinfo-nickname">{{userInfo.nickName}}</p>
+    </block>
+    <p class="tips">选一张珍藏的图片，好友拼出来才能获得赏金</p>
+  </view>
+  <view class="pintu">
+    <image class="home-pintu" src="/images/pintu/home-pintu.png" background-size="cover"></image>
+    <a wx:for="{{[1,2,3,4]}}" wx:for-item="i" wx:key="i" data-id="{{i}}" bindtap="clickPintu"></a>
+  </view>
+  <p class="kefu"><a><image src="/images/icons/icon-kefu.png"></image>联系客服</a></p>
+</view>

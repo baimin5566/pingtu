@@ -1,0 +1,67 @@
+.complaint {
+	background-color: #f1f1f1;
+}
+
+.title {
+	display: block;
+	font-size: 28rpx;
+	color: #999;
+	letter-spacing: 0;
+	padding: 24rpx 32rpx;
+}
+
+.complaint .check {
+	background-color: #fff;
+	padding-left: 32rpx;
+	font-size: 32rpx;
+	color: #333333;
+	letter-spacing: 0;
+}
+
+.checkbox {
+	display: block;
+	border-bottom: 2rpx solid #EBEBEB;
+	padding: 24rpx 32rpx 24rpx 0;
+}
+
+.checkbox image {
+	width: 44rpx;
+	height: 44rpx;
+	float: right;
+}
+
+.input-view {
+	padding: 24rpx 32rpx;
+	font-size: 32rpx;
+	color: #333333;
+	letter-spacing: 0;
+	background-color: #fff;
+}
+
+.input-view span {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 48rpx;
+}
+
+input {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 32rpx;
+}
+
+.btns {
+	display: block;
+	padding: 0 32rpx;
+}
+
+button {
+	line-height: 88rpx;
+	background: #1AAD19;
+	border: 1px solid rgba(5,5,5,0.08);
+	border-radius: 4px;
+	font-size: 32rpx;
+	color: #fff;
+	letter-spacing: 0;
+	margin-top: 48rpx;
+}

@@ -1,0 +1,77 @@
+/**index.wxss**/
+.index {
+	min-height: 100vh;
+	height: 100%;
+	background-color: #DD5051;
+	text-align: center;
+}
+.userinfo {
+	text-align: center;
+	padding: 36rpx 52rpx 0;
+}
+
+.userinfo-avatar {
+	display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto 16rpx;
+  border-radius: 100%;
+}
+
+.userinfo-nickname,.tips {
+	display: block;
+  font-size: 32rpx;
+	color: #FEE2B2;
+	letter-spacing: 0;
+	margin-bottom: 10rpx;
+}
+
+.pintu {
+	display: inline-block;
+	text-align: center;
+	margin: 68rpx 0 80rpx;
+	position: relative;
+}
+
+.pintu a {
+	position: absolute;
+	display: block;
+	width: 200rpx;
+	height: 200rpx;
+	top: 0;
+	left: 60rpx;
+}
+
+.pintu a:nth-of-type(2) {
+	left: 260rpx;
+}
+.pintu a:nth-of-type(3) {
+	top: 200rpx;
+	left: 60rpx;
+}
+.pintu a:nth-of-type(4) {
+	top: 200rpx;
+	left: 260rpx;
+}
+
+.home-pintu {
+	width: 528rpx;
+	height: 464rpx;
+}
+
+.kefu {
+	text-align: center;
+	display: block;
+}
+
+.kefu a {
+	font-size: 12px;
+	color: #F8C487;
+	letter-spacing: 0;
+}
+
+.kefu image {
+	width: 28rpx;
+	height: 26rpx;
+	margin-right: 10rpx;
+}

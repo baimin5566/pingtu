@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<view class="pay">
+  <view class="pay-view">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{subjects}}">
+      <view class="picker">{{subjects[index]}}</view>
+      <image src="/images/icons/icon-select.png"></image>
+    </picker>
+    <radio-group class="radio-group" bindchange="radioChange">拼图难度：
+      <label wx:for="{{radios}}" wx:for-item="i" wx:key="i.value">
+        <image wx:if="{{difficulty==i.name}}" src="/images/icons/icon-radio-check.png"></image>
+        <image wx:else="{{difficulty==i.name}}" src="/images/icons/icon-radio.png"></image>
+        <radio value="{{i.name}}" checked="{{i.checked}}" hidden="true"/>{{i.value}}
+      </label>
+    </radio-group>
+    <view class="input-view">赏金(元)：
+      <input type="number" placeholder="请填写要打赏的金额" bindinput="bindMoneyInput" value="{{money}}"/>
+    </view>
+    <view class="input-view">数量(个)：
+      <input type="number" placeholder="请填写红包个数" bindinput="bindNumInput" value="{{num}}"/>
+    </view>
+    <button bindtap="pay">还需支付{{money?money:''}}元</button>
+    <p class="tips">包含¥0.02手续费</p>
+  </view>
+  <view class="pintu-img">
+    <image wx:if="{{type==1}}" src="/images/pintu/pintu-default1.png"></image>
+    <image wx:if="{{type==2}}" src="/images/pintu/pintu-default2.png"></image>
+    <image wx:if="{{type==3}}" src="/images/pintu/pintu-default3.png"></image>
+    <image wx:if="{{type==4}}" src="{{imageSrc}}"></image>
+    <view class="vertical"><p class="line" wx:for="{{difficultyLine}}" wx:for-item="i" wx:key="i"></p></view>
+    <view class="Horizontal"><p class="line" wx:for="{{difficultyLine}}" wx:for-item="i" wx:key="i"></p></view>
+  </view>
+  <p class="tips1"><image src="/images/icons/icon-alert.png"></image>请勿上传色情以及其他违禁图片，本小程序有权在收到投诉后删除相应内容</p>
+</view>

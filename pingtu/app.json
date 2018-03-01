@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/pintu/pintu",
+    "pages/index/index",
+    "pages/dingzhi/dingzhi",
+    "pages/complaint/complaint",
+    "pages/help/help",
+    "pages/withdraw/withdraw",
+    "pages/records/records",
+    "pages/pay/pay",
+    "pages/cropper/cropper",
+    "pages/build/build",
+    "pages/logs/logs"
+  ],
+  "tabBar": {  
+    "color": "#DD5051",
+    "selectedColor": "#DD5051",  
+    "borderStyle":"white",  
+    "list": [{  
+     "selectedIconPath": "images/records.png",  
+     "iconPath": "images/records.png",  
+     "pagePath": "pages/records/records",  
+     "text": "我的记录"  
+    }, {  
+     "selectedIconPath": "images/withdraw.png",  
+     "iconPath": "images/withdraw.png",  
+     "pagePath": "pages/withdraw/withdraw",  
+     "text": "余额提现"  
+    }, {  
+     "selectedIconPath": "images/help.png",  
+     "iconPath": "images/help.png",  
+     "pagePath": "pages/help/help",  
+     "text": "常见问题"  
+    }]  
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#DD5051",
+    "navigationBarTitleText": "时光拼图",
+    "navigationBarTextStyle":"white"
+  },
+  "component": true
+}

@@ -1,0 +1,52 @@
+<!--records.wxml-->
+<view class="records">
+  <view class="tab">
+    <block wx:if="{{tab==1}}">
+      <p class="active">我发出的</p>
+      <p bindtap="changeTab">我收到的</p>
+    </block>
+    <block wx:else>
+      <p bindtap="changeTab">我发出的</p>
+      <p class="active">我收到的</p>
+    </block>
+    <i class="{{tab==1?'':'right'}}"></i>
+  </view>
+  <!-- 发出的 -->
+  <view class="{{tab==1?'page-one':'hide-one'}}">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <p class="info"><span class="userinfo-nickname">{{userInfo.nickName}}</span>发出<span class="red">3</span>个红包，共</p>
+        <p class="money"><span>3.00</span>元</p>
+      </block>
+    </view>
+    <view class="send">
+      <view wx:for="{{[1,2,3]}}" wx:key="*this">
+        <p><span>一起来拼智力领福利</span><span>1.00 元</span></p>
+        <p><span>2月6日 16:42</span><span>1/1</span></p>
+      </view>
+    </view>
+  </view>
+  <!-- 收到的 -->
+  <view class="{{tab==2?'page-two':'hide-two'}}">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        <p class="info"><span class="userinfo-nickname">{{userInfo.nickName}}</span>收到<span class="red">3</span>个红包，共</p>
+        <p class="money"><span>3.00</span>元</p>
+      </block>
+    </view>
+    <view class="receive">
+      <view wx:for="{{[1,2,3]}}" wx:key="*this">
+        <image src="/images/pintu/home-pintu.png"></image>
+        <view>
+          <p class="name">啦啦啦漾<span>1.00 元</span></p>
+          <p class="desc">2月6日 16:42</p>
+        </view>
+      </view>
+    </view>
+  </view>
+  <p class="help">常见问题</p>
+</view>

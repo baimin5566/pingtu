@@ -1,0 +1,116 @@
+.build {
+	min-height: 100vh;
+	height: 100%;
+	background-color: #D14C4D;
+	text-align: center;
+}
+.bg {
+	width: 100vw;
+	height: 90vh;
+}
+.main {
+	position: absolute;
+	width: 100vw;
+	top: 0;
+	padding: 0 32rpx;
+	box-sizing: border-box;
+}
+.userinfo {
+	text-align: center;
+	padding: 36rpx 28px 0;
+}
+
+.userinfo-avatar {
+	display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto 16rpx;
+  border-radius: 100%;
+}
+
+.tips {
+	display: block;
+  font-size: 16px;
+	color: #FEE2B2;
+	letter-spacing: 0;
+	margin-bottom: 10rpx;
+}
+
+.title {
+	font-size: 26px;
+	color: #FEE2B2;
+	margin-top: 24rpx;
+}
+.title image {
+	width: 40rpx;
+	height: 26rpx;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.title image:first-child {
+	margin-right: 32rpx;
+}
+
+.title image:last-child {
+	margin-left: 32rpx;
+}
+
+.imgs {
+	display:inline-block;
+	width: 240rpx;
+	height: 240rpx;
+	position: relative;
+	margin-top: 48rpx;
+}
+
+.imgs image:first-child {
+	width: 240rpx;
+	height: 240rpx;
+}
+
+.imgs image:last-child {
+	width: 80rpx;
+	height: 80rpx;
+	position: absolute;
+	z-index: 1;
+	top: 80rpx;
+	left: 80rpx;
+}
+
+.btns {
+	background: #fff;
+	border-radius: 4px;
+	padding: 48rpx 32rpx 32rpx;
+	margin-top: 48rpx;
+}
+
+.btns button {
+	background: #F8F8F8;
+	border: 1px solid rgba(5,5,5,0.10);
+	border-radius: 4px;
+	font-size: 16px;
+	color: #000;
+	text-align: center;
+}
+.btns button:first-child {
+	background: #1AAD19;
+	border: 1px solid rgba(5,5,5,0.08);
+	color: #FFFFFF;
+	margin-bottom: 32rpx;
+}
+.btns a {
+	font-size: 14px;
+	color: #666666;
+	letter-spacing: 0;
+	margin-top: 32rpx;
+	display: inline-block;
+}
+
+canvas {
+	width: 100vw;
+	display: inline;
+	height: 449px;
+	position: absolute;
+	z-index: -999;
+}

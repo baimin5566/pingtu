@@ -1,0 +1,137 @@
+/**index.wxss**/
+.pay {
+	min-height: 100vh;
+	background-color: #DD5051;
+	text-align: left;
+	padding: 0 32rpx;
+	height: 100%;
+}
+
+.pay-view {
+	background: #FFF8EB;
+	border-radius: 4px;
+	height: 554rpx;
+	padding: 24rpx 32rpx 16rpx;
+}
+
+.picker {
+	font-size: 14px;
+	color: #B42424;
+	letter-spacing: 0;
+	border-bottom: 2rpx solid #FEE2B2;
+	padding-bottom: 24rpx;
+	width: 94%;
+	display: inline-block;
+}
+
+.picker + image {
+	width: 28rpx;
+	height: 16rpx;
+}
+
+.radio-group {
+	font-size: 14px;
+	color: #B42424;
+	letter-spacing: 0;
+	border-bottom: 2rpx solid #FEE2B2;
+	padding: 24rpx 0;
+}
+
+.radio-group label {
+	margin-right: 60rpx;
+}
+.radio-group label:last-child {
+	margin-right: 0;
+}
+
+.radio-group image {
+	width: 32rpx;
+	height: 32rpx;
+	margin-right: 16rpx;
+}
+
+.input-view {
+	font-size: 14px;
+	color: #B42424;
+	letter-spacing: 0.9px;
+	padding: 24rpx 0;
+	border-bottom: 2rpx solid #FEE2B2;
+}
+
+input {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+button {
+	background: #FEE2B2;
+	border-radius: 4px;
+	font-size: 16px;
+	color: #DD5051;
+	letter-spacing: 0;
+	margin: 32rpx 0 16rpx;
+}
+
+.tips {
+	font-size: 12px;
+	color: #C0A06D;
+	letter-spacing: 1px;
+	text-align: center;
+	display: block;
+}
+
+.pintu-img {
+	width: 400rpx;
+	height: 400rpx;
+	background: #FFF8EB;
+	padding: 8rpx;
+	margin: 48rpx auto 32rpx;
+	position: relative;
+}
+
+.pintu-img image {
+	width: 100%;
+	height: 100%;
+}
+
+.pintu-img view {
+	width: 400rpx;
+	height: 400rpx;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.pintu-img .vertical p {
+	display: block;
+	width: 4rpx;
+	height: 400rpx;
+	background: #fff;
+}
+.pintu-img .Horizontal {
+	flex-direction: column;
+}
+.pintu-img .Horizontal p {
+	display: block;
+	width: 400rpx;
+	height: 4rpx;
+	background: #fff;
+}
+
+.tips1 {
+	font-size: 12px;
+	color: #F8C487;
+	letter-spacing: 0;
+	text-align: center;
+	width: 87%;
+	display: block;
+	margin: 0 auto 72rpx;
+}
+
+.tips1 image {
+	width: 28rpx;
+	height: 28rpx;
+	margin-right: 10rpx;
+}

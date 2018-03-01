@@ -1,0 +1,13 @@
+
+<view class="dingzhi">
+	<block wx:if="{{!success}}">
+	  <input type="number" placeholder="请填写您的手机号" value="{{phone}}"/>
+	  <textarea placeholder="请填写您要定制的小程序内容…" placeholder-style="color:#D0CDCD;" value="{{desc}}" />
+	  <button bindtap="submit">提交</button>
+	</block>
+	<view class="success" wx:else>
+		<image class="icon-success" src="/images/icons/icon-success.png"></image>
+		<p class="title">提交成功</p>
+		<p class="tips">您已提交成功，请耐心等待，我们的客服会在24小时内进行处理。</p>
+	</view>
+</view>

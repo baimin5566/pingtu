@@ -1,0 +1,9 @@
+<template name="userItem">
+	<view class="user-item">
+		<image src="/images/pintu/home-pintu.png"></image>
+		<view>
+			<p class="name">啦啦啦漾<span>1.00 元</span></p>
+			<p class="desc">用时2098秒<span>2月6日 16:44</span></p>
+		</view>
+	</view>
+</template>

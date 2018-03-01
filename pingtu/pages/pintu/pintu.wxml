@@ -1,0 +1,66 @@
+<import src="../../components/user-item.wxml"/>
+<view class="pintu">
+  <view class="main">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      </block>
+      <p class="tips">比一比谁的手速最快</p>
+    </view>
+    <view class="pintu-box">
+      <image src="/images/pintu/pintu-default1.png"></image>
+      <view class="shade">
+        <block wx:if="{{!success}}">
+          <p class="start" bindtap="init">点击拼图领取赏金</p>
+          <image class="eye" bindtap="previewImage" src="/images/icons/icon-eye.png"></image>
+        </block>
+        <block wx:else>
+          <p class="money"><span>1.00</span>元</p>
+          <p class="time"><image src="/images/icons/icon-time.png"></image>{{seconds}}秒</p>
+        </block>
+      </view>
+    </view>
+    <p class="time" wx:if="{{!success}}"><image src="/images/icons/icon-time.png"></image>拼图时间：不限制</p>
+    <view class="opt">
+      <p bindtap="goWithdraw"><image src="/images/icons/icon-money.png"></image>去提现</p>
+      <p bindtap="goHome"><image src="/images/icons/icon-pintu.png"></image>再发一个</p>
+      <p open-type="share"><image src="/images/icons/icon-share.png"></image>去转发</p>
+    </view>
+  </view>
+  <view class="records">
+    <p class="status">已领取0/1个，共0.00/1.00元<a>投诉</a></p>
+    <block wx:if="{{false}}">
+      <p class="btn">查看我的记录</p>
+      <p class="tips">未领取的金额，将于24小时后退至小程序余额</p>
+    </block>
+    <block wx:else>
+      <template is="userItem" />
+    </block>
+  </view>
+  <image bindtap="godz" class="dz" src="/images/pintu/home-bottom.png"></image>
+  <canvas canvas-id="myCanvas" hidden="{{start||success}}"></canvas>
+  <view class="shadow" wx:if="{{start}}">
+    <block wx:if="{{!success}}">
+      <view class="time"><image src="/images/icons/icon-time-white.png"></image>用时{{seconds}}秒</view>
+      <view class="game">
+        <view wx:for="{{images}}" wx:key="*this" data-id="{{index}}" bindtap="clickimg" style="width:{{600/type}}rpx;height:{{600/type}}rpx">
+          <image src="{{images[arrySort[index]]}}" style="width:{{600/type}}rpx;height:{{600/type}}rpx"></image>
+          <i wx:if="{{active[index]}}" style="width:{{600/type}}rpx;height:{{600/type}}rpx"></i>
+        </view>
+        <p class="tips">点击图块交换位置，拼图成功自动领取赏金</p>
+      </view>
+      <button>放弃挑战</button>
+    </block>
+    <view class="success" wx:else>
+      <image class="close" src="/images/icons/icon-modal-close.png" bindtap="open"></image>
+      <image class="bg" src="/images/pintu/home-open-bg.png"></image>
+      <view class="user">
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <p class="userinfo-nickname">{{userInfo.nickName}}</p>
+        <p class="info">恭喜你完成了拼图，用时{{seconds}}秒</p>
+      </view>
+      <image class="open" src="/images/pintu/home-open.png" bindtap="open"></image>
+    </view>
+  </view>
+</view>

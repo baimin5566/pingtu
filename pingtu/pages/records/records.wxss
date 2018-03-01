@@ -1,0 +1,191 @@
+.records {
+	min-height: 100vh;
+	background-color: #f1f1f1;
+	position: relative;
+}
+
+.records > view {
+	transition: 0.5s;
+	width: 100vw;
+}
+
+.tab {
+	height: 88rpx;
+	background-color: #fff;
+	position: relative;
+}
+
+.tab p {
+	display: inline-block;
+	width: 50vw;
+	font-size: 16px;
+	color: #999;
+	letter-spacing: 0;
+	line-height: 88rpx;
+	text-align: center;
+}
+
+.tab p.active {
+	color: #DD5051;
+}
+
+.tab i {
+	display: inline-block;
+	width: 80rpx;
+	height: 4rpx;
+	background: #DD5051;
+	border-radius: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 25vw;
+	margin-left: -40rpx;
+	transition: 0.5s;
+}
+
+.tab i.right {
+	left: 75vw;
+}
+
+.page-one {
+	position: absolute;
+	left: 0;
+}
+
+.hide-one {
+	position: absolute;
+	left: -100vw;
+}
+
+.page-two {
+	position: absolute;
+	left: 0;
+}
+
+.hide-two {
+	position: absolute;
+	left: 100vw;
+}
+
+
+.userinfo {
+	text-align: center;
+	padding-top: 48rpx;
+	font-size: 16px;
+	color: #333;
+	letter-spacing: 0;
+}
+
+.userinfo-avatar {
+	display: block;
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto 24rpx;
+  border-radius: 100%;
+}
+
+.userinfo .info {
+	display: block;
+}
+
+.userinfo-nickname {
+	color: #586C94;
+	margin-right: 16rpx;
+}
+
+.userinfo .red {
+	color: #DD5051;
+}
+
+.money {
+	display:block;
+	margin-top: 32rpx;
+	line-height: 100rpx;
+}
+
+.money span {
+	font-size: 40px;
+	color: #DD5051;
+	margin-right: 10rpx;
+	position: relative;
+	top: 6rpx;
+}
+
+.send,.receive {
+	background: #fff;
+	border-top: 1px solid #EBEBEB;
+	border-bottom: 1px solid #EBEBEB;
+	padding-left: 32rpx;
+	margin-top: 66rpx;
+}
+
+.send > view {
+	border-bottom: 1px solid #EBEBEB;
+	padding: 24rpx 32rpx 24rpx 0;
+}
+
+.send > view:last-child {
+	border-bottom: 0;
+}
+
+.send > view p,.receive > view p {
+	display: block;
+	font-size: 14px;
+	color: #999;
+	letter-spacing: 0;
+	line-height: 40rpx;
+}
+
+.send > view p span:last-child {
+	float: right;
+}
+
+.send > view p:first-child {
+	color: #333333;
+	line-height: 44rpx;
+	margin-bottom: 2rpx;
+}
+
+.receive > view {
+	border-bottom: 1px solid #EBEBEB;
+	padding: 24rpx 32rpx 24rpx 0;
+	display: flex;
+	align-items: center;
+}
+
+.receive > view view {
+	flex: 1;
+}
+
+.receive > view image {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 4px;
+	margin-right: 16rpx;
+}
+
+.receive > view .name {
+	font-size: 32rpx;
+	color: #333333;
+	letter-spacing: 0;
+}
+
+.receive > view .desc {
+	font-size: 28rpx;
+	color: #999999;
+	letter-spacing: 0;
+	margin-top: 8rpx;
+}
+
+.receive > view span {
+	float: right;
+}
+
+.help {
+	position: absolute;
+	bottom: 24rpx;
+	font-size: 14px;
+	color: #586C94;
+	letter-spacing: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
